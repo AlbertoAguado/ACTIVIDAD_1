@@ -26,6 +26,14 @@ nav {
 
 nav ul {
     display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0px;
+}
+
+nav ul li {
+    text-align: center;
 }
 
 section {
@@ -110,6 +118,10 @@ footer {
     header {
         background-color: pink;
     }
+
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 /*Adaptación optimizada para verse en un iPad en posición horizontal.*/
@@ -126,6 +138,10 @@ footer {
 
     header {
         background-color: pink;
+    }
+
+    nav ul {
+        flex-direction: column;
     }
 }
 
@@ -144,6 +160,10 @@ footer {
     header {
         background-color: pink;
     }
+
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 /*Adaptación optimizada para verse en un iPhone posición horizontal.*/
@@ -161,4 +181,29 @@ footer {
     header {
         background-color: pink;
     }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 899px) {
+    #contenedor {
+        grid-template-columns:1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section"
+            "aside"
+            "footer";
+    }
+
+    header {
+        background-color: pink;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
 }
