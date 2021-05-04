@@ -15,7 +15,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
+header#main-header {
   
     height:100px;
     background-color: #ED6A40;
@@ -84,10 +84,66 @@ aside {
 }
 
 footer {
- 
-    height:65px;
+    padding-bottom: 1rem;
     background-color: #2B4448;
     grid-area: footer;
+}
+
+.blog-footer {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items:center;
+    justify-content:center;
+}
+
+.blog-footer-left {
+    color:white;
+}
+
+.blog-footer-center {
+    display: flex;
+}
+
+
+.blog-footer-right {
+    display: flex;
+    gap:1.5rem;
+}
+
+.blog-footer-right a img {
+    height:33px;
+    opacity: .85;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form h4{
+    color: #FBD266;
+    font-Family: 'Source Sans Pro', Sans-Serif;
+    text-align: center;
+    font-size:1.1rem;
+    margin-bottom:0.5rem;
+}
+
+.subscribe-form label {
+    color: white;
+    font-Family: 'Source Sans Pro', Sans-Serif;
+}
+
+.subscribe-form input {
+    border-radius:5px;
+    height:2rem;
+}
+
+.subscribe-button {
+    background-color: #FBD266;
+    font-Family: 'Source Sans Pro', Sans-Serif;
 }
 
 /*MEDIA QUERIES*/
@@ -112,7 +168,6 @@ footer {
             "header  header"
             "nav     nav"
             "section aside"
-            "section aside"
             "footer  footer";
     }
 
@@ -125,7 +180,6 @@ footer {
         grid-template-areas:
             "header  header"
             "nav     nav"
-            "section aside"
             "section aside"
             "footer  footer";
     }
@@ -143,7 +197,6 @@ footer {
             "header  header"
             "nav     nav"
             "section aside"
-            "section aside"
             "footer  footer";
     }
 
@@ -159,7 +212,6 @@ footer {
         grid-template-areas:
             "header  header"
             "nav     nav"
-            "section aside"
             "section aside"
             "footer  footer";
     }
@@ -177,7 +229,6 @@ footer {
         grid-template-areas:
             "header  header"
             "nav     nav"
-            "section aside"
             "section aside"
             "footer  footer";
     }
@@ -205,4 +256,15 @@ footer {
         flex-direction: column;
     }
 
+    .blog-footer {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items:center;
+        justify-content:center;
+    }
+
 }
+
+
