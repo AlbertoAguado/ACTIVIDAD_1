@@ -146,6 +146,20 @@ footer {
     font-Family: 'Source Sans Pro', Sans-Serif;
 }
 
+
+
+/*FORMULARIO*/ 
+#datos-personales {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#datos-personales > div {
+    padding:.25rem;
+}
+
+
+
 /*MEDIA QUERIES*/
 /*Adaptación para ancho variable de monitores de más de 1300px de ancho.*/
 @media screen and (min-width: 1300px) {
