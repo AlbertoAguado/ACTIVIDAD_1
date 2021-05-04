@@ -1,5 +1,6 @@
 
 #contenedor {
+    /*min-height: 100vh*/;
     display: grid;
     grid-gap:5px;
     grid-template-areas:
@@ -8,18 +9,19 @@
         "section"
         "aside"
         "footer";
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
   
-    min-height:100px;
+    height:100px;
     background-color: blue;
     grid-area: header;
 }
 
 nav {
 
-    min-height:100px;
+    min-height:50px;
     background-color: red;
     grid-area: nav;
 }
@@ -34,6 +36,10 @@ nav ul {
 
 nav ul li {
     text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
 }
 
 section {
@@ -64,7 +70,7 @@ aside {
 
 footer {
  
-    min-height:100px;
+    height:65px;
     background-color: black;
     grid-area: footer;
 }
@@ -73,7 +79,7 @@ footer {
 /*Adaptación para ancho variable de monitores de más de 1300px de ancho.*/
 @media screen and (min-width: 1300px) {
     #contenedor {
-        grid-template-columns:1fr 3fr;
+        grid-template-columns:3fr 2fr;
         grid-template-areas:
             "header  header"
             "nav     nav"
@@ -89,7 +95,7 @@ footer {
 /*Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.*/
 @media (min-width: 900px) and (max-width: 1299px) {
     #contenedor {
-        grid-template-columns:1fr 3fr;
+        grid-template-columns:3fr 2fr;
         grid-template-areas:
             "header  header"
             "nav     nav"
@@ -106,7 +112,7 @@ footer {
 /*Adaptación optimizada para verse en un iPad en posición vertical.*/
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
     #contenedor {
-        grid-template-columns:1fr 3fr;
+        grid-template-columns:3fr 2fr;
         grid-template-areas:
             "header  header"
             "nav     nav"
@@ -127,7 +133,7 @@ footer {
 /*Adaptación optimizada para verse en un iPad en posición horizontal.*/
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
     #contenedor {
-        grid-template-columns:1fr 3fr;
+        grid-template-columns:3fr 2fr;
         grid-template-areas:
             "header  header"
             "nav     nav"
@@ -148,7 +154,7 @@ footer {
 /*Adaptación optimizada para verse en un iPhone posición vertical.*/
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) { 
     #contenedor {
-        grid-template-columns:1fr 3fr;
+        grid-template-columns:3fr 2fr;
         grid-template-areas:
             "header  header"
             "nav     nav"
@@ -169,7 +175,7 @@ footer {
 /*Adaptación optimizada para verse en un iPhone posición horizontal.*/
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { 
     #contenedor {
-        grid-template-columns:1fr 3fr;
+        grid-template-columns:3fr 2fr;
         grid-template-areas:
             "header  header"
             "nav     nav"
