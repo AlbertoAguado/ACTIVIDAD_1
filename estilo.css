@@ -1,8 +1,11 @@
+body {
+    margin:0;
+    padding:0;
+}
 
 #contenedor {
     /*min-height: 100vh*/;
     display: grid;
-    grid-gap:5px;
     grid-template-areas:
         "header"
         "nav"
@@ -15,14 +18,14 @@
 header {
   
     height:100px;
-    background-color: blue;
+    background-color: #ED6A40;
     grid-area: header;
 }
 
 nav {
 
     min-height:50px;
-    background-color: red;
+    background-color: #fceae6;
     grid-area: nav;
 }
 
@@ -42,36 +45,48 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav ul li a,
+nav ul li a:visited,
+nav ul li a:link{
+    text-decoration: none;
+    color: #2B4448;
+}
+
+nav ul li a:hover{
+   font-weight:bolder;
+}
+
 section {
  
     min-height:100px;
-    background-color: green;
+    background-color: #fceae6;
     grid-area: section;
+    min-height:80vh;
 }
 
 section > header {
-    background-color: green;
+    background-color: #fceae6;
 }
 
 section > article {
-    background-color: green;
+    background-color: #fceae6;
 }
 
 section > footer {
-    background-color: green;
+    background-color: #fceae6;
 }
 
 aside {
 
     min-height:100px;
-    background-color: yellow;
+    background-color: #fceae6;
     grid-area: aside;
 }
 
 footer {
  
     height:65px;
-    background-color: black;
+    background-color: #2B4448;
     grid-area: footer;
 }
 
@@ -87,9 +102,6 @@ footer {
             "footer  footer";
     }
 
-    header {
-        background-color: brown;
-    }
 }
 
 /*Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.*/
@@ -104,9 +116,6 @@ footer {
             "footer  footer";
     }
 
-    header {
-        background-color: pink;
-    }
 }
 
 /*Adaptación optimizada para verse en un iPad en posición vertical.*/
@@ -119,10 +128,6 @@ footer {
             "section aside"
             "section aside"
             "footer  footer";
-    }
-
-    header {
-        background-color: pink;
     }
 
     nav ul {
@@ -142,10 +147,6 @@ footer {
             "footer  footer";
     }
 
-    header {
-        background-color: pink;
-    }
-
     nav ul {
         flex-direction: column;
     }
@@ -163,9 +164,6 @@ footer {
             "footer  footer";
     }
 
-    header {
-        background-color: pink;
-    }
 
     nav ul {
         flex-direction: column;
@@ -184,9 +182,7 @@ footer {
             "footer  footer";
     }
 
-    header {
-        background-color: pink;
-    }
+
 
     nav ul {
         flex-direction: column;
@@ -204,9 +200,6 @@ footer {
             "footer";
     }
 
-    header {
-        background-color: pink;
-    }
 
     nav ul {
         flex-direction: column;
