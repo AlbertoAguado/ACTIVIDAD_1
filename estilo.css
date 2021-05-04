@@ -16,15 +16,22 @@ body {
 }
 
 header#main-header {
-  
     height:100px;
     background-color: #ED6A40;
     grid-area: header;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header#main-header img{
+    max-height:75px;
 }
 
 nav {
 
-    min-height:50px;
+    min-height:75px;
     background-color: #fceae6;
     grid-area: nav;
 }
@@ -39,6 +46,7 @@ nav ul {
 
 nav ul li {
     text-align: center;
+    padding: .25rem 0;
 }
 
 nav ul li a{
@@ -172,6 +180,8 @@ footer {
             "footer  footer";
     }
 
+    
+
 }
 
 /*Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.*/
@@ -268,6 +278,11 @@ footer {
 
     nav ul {
         flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: .33rem 0;
     }
 
     .blog-footer {
