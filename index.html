@@ -16,22 +16,49 @@
 <body>
     <div id="contenedor">
         <header id="main-header">
-           <img src="images/logo.png">
+           <img src="images/sabeal.png" alt="Sabeal, tu viaje ideal">
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html"class="selected">Home</a></li>
-                <li><a href="blog.html" >Blog</a></li>
-                <li><a href="quienes.html">Quiénes somos</a></li>
-                <li><a href="nuestrosdestinos.html">Nuestros destinos</a></li>
-                <li><a href="faq.html">Preguntas frecuentes</a></li>
-                <li><a href="dondeestamos.html">Dónde estamos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
+<nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <ul>
+            <li><a href="index.html"class="selected"><img src="images/casita.png" alt="Home"></a></li>
+            <li><a>Blog</a></li>
+            <li><a href="quienes.html">Quiénes somos</a></li>
+            <li><a href="nuestrosdestinos.html">Nuestros destinos</a></li>
+            <li><a>Preguntas frecuentes</a></li>
+            <li><a>Dónde estamos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+        
         <section>
             <header>
                 Titular Noticia
+                <h1>Viajamos para cambiar: no de lugar, sino de ideas.</h1>
             </header>
             <article>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto adipisci veniam optio praesentium provident perspiciatis molestias fuga deserunt veritatis fugit! Quasi quo odit ad laudantium nesciunt, nam nemo? Aliquam, quibusdam.
