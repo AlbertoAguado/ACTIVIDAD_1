@@ -12,27 +12,52 @@
 </head>
 <body>
     <div id="contenedor">
-        <header>
+        <header id="main-header">
+            <img src="images/sabeal.png" alt="Sabeal, tu viaje ideal">
             HEADER
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html" >Blog</a></li>
-                <li><a href="quienes.html"class="selected">Quiénes somos</a></li>
-                <li><a href="nuestrosdestinos.html">Nuestros destinos</a></li>
-                <li><a href="faq.html">Preguntas frecuentes</a></li>
-                <li><a href="dondeestamos.html">Dónde estamos</a></li>
-                <li><a href="contacto.html" >Contáctanos</a></li>
-            </ul>
-            NAV
-        </nav>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <ul>
+                    <li><a href="index.html"class="selected"><img src="images/casita.png" alt="Home"></a></li>
+                    <li><a>Blog</a></li>
+                    <li><a href="quienes.html">Quiénes somos</a></li>
+                    <li><a href="nuestrosdestinos.html">Nuestros destinos</a></li>
+                    <li><a>Preguntas frecuentes</a></li>
+                    <li><a>Dónde estamos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+              </ul>
+            </div>
+          </nav>
         <section>
             <header>
+                <h1 align = center > Viajes Sabeal</h1>
                 SECTION HEADER
             </header>
             <article>
-                SECTION ARTICLE
+                <h5> Viajes Vickytravel, agencia de viajes especializada y experta en el mundo del viaje,  siempre pionera, e innovadora  te ofrece un viaje responsable,  adaptado a ti y tus necesidades, decididamente, un viaje que desea cumplir tus sueños viajeros, de búsqueda, descubrimiento, de experiencias y  emociones, en definitiva de volver del viaje con  una huella inolvidable. Un  equipo de profesionales viajeros  que te escucharán para confeccionar y ofrecerte la mejor alternativa para disfrutar de tus vacaciones.  Desde rutas a medida, hasta salidas en grupos reducidos por todo el Mundo, para que tú selecciones lo que más te interesa. Viajes de aventura, solidarios, étnicos, safaris, culturales,  trekking, especializados en arquitectura, viajes para novios, … una amplia gama para ti, viajero responsable , creativo y activo, viajero actual, viajero del siglo XX. Viaja con Vickytravel a cualquier parte del mundo, con la seguridad de estar asesorado por un equipo experto que te brindará los mejores servicios en cada momento.</h5>
             </article>
             <footer>
                 SECTION FOOTER
